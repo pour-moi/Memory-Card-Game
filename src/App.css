@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.card_container {
+  width: 16.5rem;
+  height: 55%;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid red;
+  position: absolute;
+  bottom: 0;
+  margin: 0.5em;
+}
+
+.cards {
+  width: 5.5rem;
+  height: 5.8rem;
+  background-color: #d5bef2;
+  border-radius: 1em;
+}
