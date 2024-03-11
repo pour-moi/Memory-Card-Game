@@ -26,6 +26,12 @@ export const Cards = () => {
           newDeck.push(data.sprites.front_default);
           newDeck.push(data.sprites.front_default);
         }
+
+        for (let i = newDeck.length - 1; i > 0; i--) {
+          let j = Math.floor(Math.random() * (i + 1));
+          [newDeck[i], newDeck[j]] = [newDeck[j], newDeck[i]];
+        }
+
         setDeck(newDeck);
       });
   }, []);
@@ -36,7 +42,7 @@ export const Cards = () => {
       <div className="card_container">
         {deck.map((card, index) => (
           <div key={index} className="cards">
-            <img src={card} alt="pokemon" />
+            <img src={card} alt="pokemon" className="images" />
           </div>
         ))}
       </div>
