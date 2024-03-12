@@ -4,8 +4,7 @@ body {
 }
 
 .card_container {
-  width: 16.5rem;
-  height: 55%;
+  width: 95%;
   display: flex;
   flex-wrap: wrap;
   border: 1px solid red;
@@ -15,8 +14,12 @@ body {
 }
 
 .cards {
-  width: 5.5rem;
-  height: 5.8rem;
+  width: 33%;
+  height: 29%;
   background-color: #d5bef2;
   border-radius: 1em;
+}
+
+.hidden {
+  display: none;
 }
