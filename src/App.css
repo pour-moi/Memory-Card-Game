@@ -1,25 +1,56 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: #000000;
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 .card_container {
-  width: 95%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  border: 1px solid red;
   position: absolute;
   bottom: 0;
-  margin: 0.5em;
 }
 
 .cards {
-  width: 33%;
-  height: 29%;
-  background-color: #d5bef2;
+  width: 7.7em;
+  height: 7.2em;
+  background-color: #fbed2c;
   border-radius: 1em;
+  margin: auto;
 }
 
-.hidden {
-  display: none;
+img {
+  width: 7em;
+  height: 7em;
+}
+
+@media (min-width: 425px) {
+  .cards {
+    width: 8.8em;
+    height: 8em;
+    background-color: #fbed2c;
+    border-radius: 1em;
+  }
+  img {
+    width: 8em;
+    height: 8em;
+  }
+}
+@media (max-width: 320px) {
+  .cards {
+    width: 6.6em;
+    height: 6em;
+    background-color: #fbed2c;
+    border-radius: 1em;
+  }
+  img {
+    width: 6em;
+    height: 6em;
+  }
 }
