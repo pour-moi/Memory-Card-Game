@@ -18,8 +18,8 @@ body {
 }
 
 .cards {
-  width: 7.7em;
-  height: 7.2em;
+  width: 33.33%;
+  height: 33.33%;
   background-color: #fbed2c;
   border-radius: 1em;
   margin: auto;
@@ -30,7 +30,7 @@ img {
   height: 7em;
 }
 
-@media (min-width: 425px) {
+/* @media (max-width: 425px) {
   .cards {
     width: 8.8em;
     height: 8em;
@@ -42,7 +42,21 @@ img {
     height: 8em;
   }
 }
-@media (max-width: 320px) {
+
+@media (min-width: 401px) and (max-width: 424px) {
+  .cards {
+    width: 7.7em;
+    height: 7em;
+    background-color: #fbed2c;
+    border-radius: 1em;
+  }
+  img {
+    width: 7em;
+    height: 7em;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 400px) {
   .cards {
     width: 6.6em;
     height: 6em;
@@ -53,4 +67,4 @@ img {
     width: 6em;
     height: 6em;
   }
-}
+} */

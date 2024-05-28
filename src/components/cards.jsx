@@ -62,7 +62,7 @@ export default function Cards() {
         (name, index) => updatedNames.indexOf(name) !== index
       );
 
-      result.length === 1 ? console.log("gameover") : setScore(score + 1);
+      result.length === 1 ? console.log("game over") : setScore(score + 1);
       if (result.length === 1) {
         setScore(0);
         setNames([]);
