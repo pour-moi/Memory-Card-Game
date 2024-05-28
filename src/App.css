@@ -24,15 +24,16 @@ body {
 }
 
 img {
-  width: 7em;
-  height: 7em;
+  width: 18em;
+  height: 18em;
 }
 
 @media (max-width: 425px) {
   .card_container {
     grid-template-columns: 14.7fr 14.7fr 14.7fr;
     gap: 0.1em;
-    padding-top: 4rem;
+    position: absolute;
+    bottom: 0;
   }
   .cards {
     width: 8.7em;
