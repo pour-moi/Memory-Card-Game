@@ -32,7 +32,7 @@ img {
   height: 18em;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 768px) {
   .card_container {
     grid-template-columns: auto auto auto;
     gap: 0.2em;
