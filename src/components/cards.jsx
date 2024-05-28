@@ -86,7 +86,7 @@ export default function Cards() {
       <h1>MATCH CARDS</h1>
       <p>Score: {score}</p>
       <div className="card_container">
-        {Image.slice(0, 10).map((card, index) => (
+        {Image.slice(0, 12).map((card, index) => (
           <div key={index} className="cards" onClick={handleClick}>
             <img
               src={card.url}
