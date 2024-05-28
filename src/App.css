@@ -5,12 +5,9 @@ body {
   color: white;
 }
 
-h1 {
-  display: inline;
-}
-
 * {
   box-sizing: border-box;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .card_container {
