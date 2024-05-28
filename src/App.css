@@ -5,13 +5,17 @@ body {
   color: white;
 }
 
+h1 {
+  display: inline;
+}
+
 * {
   box-sizing: border-box;
 }
 
 .card_container {
   display: grid;
-  grid-template-columns: 14.7fr 14.7fr 14.7fr 14.7fr;
+  grid-template-columns: auto auto auto auto;
   gap: 1em;
 }
 
@@ -30,21 +34,21 @@ img {
 
 @media (max-width: 425px) {
   .card_container {
-    grid-template-columns: 14.7fr 14.7fr 14.7fr;
-    gap: 0.1em;
+    grid-template-columns: auto auto auto;
+    gap: 0.2em;
     position: absolute;
     bottom: 0;
   }
   .cards {
-    width: 8.7em;
-    height: 8.7em;
+    width: 7.7rem;
+    height: 7.7rem;
     background-color: #fbed2c;
     border-radius: 1em;
     margin: 0;
   }
 
   img {
-    width: 8em;
-    height: 8em;
+    width: 7em;
+    height: 7em;
   }
 }
