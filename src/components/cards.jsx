@@ -13,18 +13,27 @@ export default function Cards() {
     }
 
     let pokemonName = [
+      "articuno",
+      "zapdos",
+      "moltres",
+      "dratini",
+      "mewtwo",
+      "chikorita",
+      "cyndaquil",
+      "totodile",
+      "lugia",
+      "ho-oh",
+      "celebi",
+      "treecko",
+      "torchic",
+      "mudkip",
+      "taillow",
+      "surskit",
+      "azurill",
+      "meditite",
+      "electrike",
+      "roselia",
       "pikachu",
-      "bulbasaur",
-      "charmander",
-      "squirtle",
-      "mew",
-      "jigglypuff",
-      "eevee",
-      "snorlax",
-      "psyduck",
-      "jynx",
-      "gyarados",
-      "lapras",
     ];
 
     let pokemon = pokemonName.map((name) =>
@@ -43,7 +52,7 @@ export default function Cards() {
           });
         }
 
-        for (let i = newDeck.length - 1; i > 0; i--) {
+        for (let i = 0; i < newDeck.length; i++) {
           let j = Math.floor(Math.random() * (i + 1));
           [newDeck[i], newDeck[j]] = [newDeck[j], newDeck[i]];
         }
@@ -77,7 +86,7 @@ export default function Cards() {
       <h1>MATCH CARDS</h1>
       <p>Score: {score}</p>
       <div className="card_container">
-        {Image.map((card, index) => (
+        {Image.slice(0, 10).map((card, index) => (
           <div key={index} className="cards" onClick={handleClick}>
             <img
               src={card.url}
