@@ -83,19 +83,22 @@ export default function Cards() {
 
   return (
     <>
-      <h1>MATCH CARDS</h1>
-      <p>Score: {score}</p>
-      <div className="card_container">
-        {Image.slice(0, 12).map((card, index) => (
-          <div key={index} className="cards" onClick={handleClick}>
-            <img
-              src={card.url}
-              alt="pokemon"
-              className="images"
-              data-name={card.name}
-            />
-          </div>
-        ))}
+      <div className="container">
+        <h1>MATCH CARDS</h1>
+        <p>Score: {score}</p>
+
+        <div className="card_container">
+          {Image.slice(0, 12).map((card, index) => (
+            <div key={index} className="cards" onClick={handleClick}>
+              <img
+                src={card.url}
+                alt="pokemon"
+                className="images"
+                data-name={card.name}
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </>
   );
