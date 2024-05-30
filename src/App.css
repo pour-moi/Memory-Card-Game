@@ -1,12 +1,10 @@
 body {
-  margin: 0;
-  padding: 0;
   background-color: #000000;
   color: white;
 }
 
 * {
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
   font-family: "Space Grotesk", sans-serif;
 }
 
@@ -19,7 +17,7 @@ body {
 .cards {
   width: 18.7em;
   height: 18.7em;
-  background-color: #fbed2c;
+  background-color: #faeb21;
   border-radius: 1em;
   margin: auto;
 }
@@ -31,22 +29,31 @@ img {
 
 @media (max-width: 500px) {
   .card_container {
-    grid-template-columns: auto auto auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: center;
     gap: 0.2em;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    width: 95%;
+    height: 29em;
+    margin: auto;
   }
   .cards {
-    width: 65%;
-    height: 85%;
-    background-color: #fbed2c;
+    width: 30%;
+    height: 24%;
     border-radius: 1em;
-    padding: 0.5rem;
+    margin: 0;
+  }
+
+  .container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   img {
-    width: 5em;
-    height: 5em;
+    width: 85%;
+    height: 100%;
   }
 }
